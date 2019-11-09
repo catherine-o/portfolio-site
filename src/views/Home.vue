@@ -36,11 +36,12 @@ export default {
       width: 100vw;
       height: 100vh;
       header {
-          background-color:white;
+          background-color:rgb(223, 222, 221);
           position: fixed;
           width: 100%;
           margin-top: 0;
           padding: 15px;
+          font-size: 17px;
           text-align: center;
           @media screen and (min-width: 800px) {
             display: flex;
