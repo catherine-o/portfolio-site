@@ -58,7 +58,10 @@ export default {
       }
       .element {
           background: none;
+          padding: 55% 10%;
+          @media screen and (min-width: 500px) {
           padding: 25% 15%;
+          }
           @media screen and (min-width: 800px) {
             padding: 15% 10%;
         }
