@@ -8,13 +8,13 @@
             A contributing writer for The Startup.
         </p>
         <nav>
-            <span>PROJECTS</span>
+            <span class='section'>PROJECTS</span>
             <span> - </span>
-            <span>WRITINGS</span>
+            <span class='section'>WRITINGS</span>
             <span> - </span>
-            <span>DRAWINGS</span>
+            <span class='section'>DRAWINGS</span>
             <span> - </span>
-            <span>CONTACT</span>
+            <span class='section'>CONTACT</span>
         </nav>
     </div>
 </template>
@@ -30,6 +30,9 @@
         padding-top: 20px;
         span {
             margin: 2%;
+        }
+        .section:hover {
+            color: black;
         }
     }
 }

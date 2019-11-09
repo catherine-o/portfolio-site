@@ -58,6 +58,9 @@ export default {
                 opacity: 60%;
                 margin-left:10px;
             }
+            img:hover {
+                opacity: 90%;;
+            }
       }
       .element {
           background: none;
