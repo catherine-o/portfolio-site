@@ -1,7 +1,20 @@
 <template>
-    <div class='home'>
-        <h1 id='name'>Catherine O'Hara</h1>
-        <About />
+    <div >
+        <div class='home'>
+            <header>
+                <h1 >Catherine O'Hara</h1>
+                <div class='icons'>
+                    <img src='../assets/icons/linkedinlogo.svg' alt='LinkedIn'>
+                    <img src='../assets/icons/githublogo.svg' alt='GitHub'>
+                    <img src='../assets/icons/mediumlogo.svg' alt='Medium'>
+                    <img src='../assets/icons/twitterlogo.svg' alt='Twitter'>
+                    <img src='../assets/icons/resumelogo.svg' alt='Resume'>
+                </div>
+            </header>
+            <div class='element'>
+                <About />
+            </div>
+        </div>
     </div>
 </template>
 
@@ -22,8 +35,33 @@ export default {
       background-repeat: no-repeat;
       width: 100vw;
       height: 100vh;
-      #name {
+      header {
           background-color:white;
+          position: fixed;
+          width: 100%;
+          margin-top: 0;
+          padding: 15px;
+          text-align: center;
+          @media screen and (min-width: 800px) {
+            display: flex;
+            justify-content: center;
+            padding-left: 24.5%;
+            .icons {
+                margin: 30px 18%;
+            }
+          }
+            img {
+                width: 25px;
+                opacity: 60%;
+                margin-left:10px;
+            }
       }
+      .element {
+          background: none;
+          padding: 25% 15%;
+          @media screen and (min-width: 800px) {
+            padding: 15% 10%;
+        }
+    }
 }
 </style>
