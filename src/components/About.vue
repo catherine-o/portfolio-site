@@ -7,6 +7,15 @@
             Experienced in Ruby on Rails, JavaScript, React, Node and Vue. 
             A contributing writer for The Startup.
         </p>
+        <nav>
+            <span>PROJECTS</span>
+            <span> - </span>
+            <span>WRITINGS</span>
+            <span> - </span>
+            <span>DRAWINGS</span>
+            <span> - </span>
+            <span>CONTACT</span>
+        </nav>
     </div>
 </template>
 
@@ -14,5 +23,11 @@
 .about {
     background-color: white;
     padding: 5% 12%;
+    nav {
+        padding-top: 20px;
+        span {
+            margin: 2%;
+        }
+    }
 }
 </style>

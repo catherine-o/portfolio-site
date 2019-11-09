@@ -36,7 +36,7 @@ export default {
       width: 100vw;
       height: 100vh;
       header {
-          background-color:rgb(223, 222, 221);
+          background-color:rgb(231, 223, 216);
           position: fixed;
           width: 100%;
           margin-top: 0;
@@ -48,7 +48,7 @@ export default {
             justify-content: center;
             padding-left: 24.5%;
             .icons {
-                margin: 30px 18%;
+                margin: 40px 18% 1% 18%;
             }
           }
             img {
