@@ -23,6 +23,9 @@
 .about {
     background-color: white;
     padding: 5% 12%;
+    h2 {
+        font-weight: 400;
+    }
     nav {
         padding-top: 20px;
         span {

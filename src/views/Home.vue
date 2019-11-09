@@ -2,7 +2,7 @@
     <div >
         <div class='home'>
             <header>
-                <h1 >Catherine O'Hara</h1>
+                <h1 >CATHERINE O'HARA</h1>
                 <div class='icons'>
                     <img src='../assets/icons/linkedinlogo.svg' alt='LinkedIn'>
                     <img src='../assets/icons/githublogo.svg' alt='GitHub'>
@@ -36,19 +36,21 @@ export default {
       width: 100vw;
       height: 100vh;
       header {
+          font-family: 'Montserrat', sans-serif;
+          letter-spacing: 2px;
           background-color:rgb(231, 223, 216);
           position: fixed;
           width: 100%;
           margin-top: 0;
-          padding: 15px;
-          font-size: 17px;
+          padding: 14px;
+          font-size: 21px;
           text-align: center;
-          @media screen and (min-width: 800px) {
+          @media screen and (min-width: 900px) {
             display: flex;
-            justify-content: center;
-            padding-left: 24.5%;
+            justify-content: space-around;
+            align-content: center;
             .icons {
-                margin: 40px 18% 1% 18%;
+                margin: 40px 10px;
             }
           }
             img {
@@ -59,13 +61,7 @@ export default {
       }
       .element {
           background: none;
-          padding: 55% 10%;
-          @media screen and (min-width: 500px) {
-          padding: 25% 15%;
-          }
-          @media screen and (min-width: 800px) {
-            padding: 15% 10%;
-        }
+          padding: 230px 10%;
     }
 }
 </style>
