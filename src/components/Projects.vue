@@ -110,7 +110,8 @@ export default {
 
 <style lang="scss">
 .projects {
-    height: 35vh;
+    // margin-bottom: 70px;
+    padding: 0 10% 30px;
     @media screen and (min-width: 1000px) {
         .project-grid {
             display: flex;

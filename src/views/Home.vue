@@ -14,6 +14,7 @@
             <div class='sections'>
                 <About />
                 <Projects />
+                <Writings />
             </div>
         </div>
     </div>
@@ -22,10 +23,12 @@
 <script>
 import About from '@/components/About'
 import Projects from '@/components/Projects'
+import Writings from '@/components/Writings'
 export default {
     components: {
         About,
-        Projects
+        Projects,
+        Writings
     },
     methods: {
         openLinkedIn() {
@@ -83,9 +86,9 @@ export default {
                 opacity: 90%;;
             }
       }
-      .sections {
-          background: none;
-          padding: 260px 10%;
-    }
+    //   .sections {
+    //       background: none;
+    //     //   padding: 260px 10%;
+    // }
 }
 </style>

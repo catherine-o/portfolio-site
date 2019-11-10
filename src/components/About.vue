@@ -9,9 +9,9 @@
                 A contributing writer for The Startup.
             </p>
             <nav>
-                <span class='section' @click="scrollToProjects()">PROJECTS</span>
+                <span class='section' @click="scrollToProjects">PROJECTS</span>
                 <span> - </span>
-                <span class='section'>WRITINGS</span>
+                <span class='section' @click="scrollToWritings">WRITINGS</span>
                 <span> - </span>
                 <span class='section'>DRAWINGS</span>
                 <span> - </span>
@@ -36,6 +36,16 @@ export default {
                 top: offsetPosition,
                 behavior: 'smooth'
             })
+        },
+        scrollToWritings() {
+            let writings = document.querySelector('.writings')
+            let writingsOffset = 135
+            let writingsPosition = writings.getBoundingClientRect().top
+            let offsetPosition = writingsPosition - writingsOffset
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            })
         }
     }
 }
@@ -44,6 +54,7 @@ export default {
 <style lang="scss">
 .about {
     height: 75vh;
+    padding: 260px 10% 0 10%;
     .info {
         background-color: white;
         padding: 5% 12%;
