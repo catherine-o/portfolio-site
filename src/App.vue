@@ -11,7 +11,7 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: -8px;
+  margin: -8px -8px 0 -8px;
   overflow-x: hidden;
   h2 {
         font-weight: 400;

@@ -9,7 +9,7 @@
                 A contributing writer for The Startup.
             </p>
             <nav>
-                <span class='section' @click='scrollToProjects'>PROJECTS</span>
+                <span class='section' @click="scrollToProjects">PROJECTS</span>
                 <span> - </span>
                 <span class='section'>WRITINGS</span>
                 <span> - </span>
@@ -22,10 +22,14 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import VueScrollTo from 'vue-scrollto'
+Vue.use(VueScrollTo)
 export default {
     methods: {
         scrollToProjects() {
-            
+            let projects = document.querySelector('.projects')
+            projects.scrollIntoView({ behavior: 'smooth' })
         }
     }
 }
