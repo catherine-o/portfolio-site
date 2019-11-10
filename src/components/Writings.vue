@@ -2,7 +2,7 @@
     <div class='writings'>
         <h2>WRITINGS</h2>
         <div class='post-grid'>
-            <div class='post'>
+            <div class='post' @click='openRailsAuthPost'>
                 <img class='post-img' src='../assets/blog/authlock.jpeg'>
                 <h3>Auth with JSON Web Tokens & BCrypt (Part I: Rails)</h3>
                 <p>
@@ -12,7 +12,7 @@
                 </p>
                 <h4>Oct 6, 2019</h4>
             </div>
-            <div class='post'>
+            <div class='post' @click='openMusicPost'>
                 <img class='post-img' src='../assets/blog/music.png'>
                 <h3>Learning to Code is like Learning to Play an Instrument</h3>
                 <p>
@@ -22,7 +22,7 @@
                 </p>
                 <h4>Sep 16, 2019</h4>
             </div>
-            <div class='post'>
+            <div class='post' @click='openBashPost'>
                 <img class='post-img' src='../assets/blog/bash.png'>
                 <h3>When the BASH Ain’t Got *Flash* — Beautify the CLI</h3>
                 <p>
@@ -40,6 +40,15 @@
 <script>
 export default {
     methods: {
+        openRailsAuthPost() {
+            window.open('https://medium.com/swlh/auth-with-json-web-tokens-bcrypt-part-i-rails-3afd71751ea', '_blank')
+        },
+        openMusicPost() {
+            window.open('https://medium.com/swlh/learning-to-code-is-like-learning-to-play-an-instrument-61517299fe3f', '_blank')
+        },
+        openBashPost() {
+            window.open('https://medium.com/@oharacatherine/when-the-bash-aint-got-flash-beautify-the-cli-5f318325a86', '_blank')
+        },
         scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' })
         }
@@ -55,7 +64,6 @@ export default {
     background-repeat: no-repeat;
     width: 100vw;
     height: 85vh;
-    padding: 0;
     h2 {
         background-color: white;
         width: 200px;
@@ -63,7 +71,7 @@ export default {
     }
     .post-grid {
         width: 80%;
-        height: 420px;
+        height: 425px;
         background-color: white;
         margin: 5% auto;
         padding: 10px 20px;
@@ -77,7 +85,11 @@ export default {
             }
             h4 {
                 opacity: 60%;
+                font-size: 15px;
             }
+        }
+        .post:hover h3 {
+            color: rgb(81, 141, 121);
         }
     }
     .arrows {
@@ -86,8 +98,8 @@ export default {
         width: 25px;
         opacity: 80%;
         position: relative;
-        top: 70%;
         left: 40%;
+        margin-top: -20px;
     }
     .arrows:hover {
         opacity: 90%;;
