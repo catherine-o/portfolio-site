@@ -4,8 +4,19 @@
         <div class='posts'>
 
         </div>
+        <img class='arrows' @click='scrollToTop' src='../assets/icons/uparrows.svg' alt='Page Up'>
     </div>
 </template>
+
+<script>
+export default {
+    methods: {
+        scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+    }
+}
+</script>
 
 <style lang="scss">
 .writings {
@@ -23,9 +34,21 @@
     }
     .posts {
         width: 70%;
-        height: 200px;
+        height: 400px;
         background-color: white;
         margin: 5% auto;
+    }
+    .arrows {
+        background-color: white;
+        padding: 5px;
+        width: 25px;
+        opacity: 80%;
+        position: relative;
+        top: 70%;
+        left: 40%;
+    }
+    .arrows:hover {
+        opacity: 90%;;
     }
 }
 </style>
