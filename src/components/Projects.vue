@@ -52,8 +52,8 @@
                 <p> 
                     <b>Trivia Time!</b> 
                     <br>
-                    An interactive journal experience that <br>
-                    provides insight to and engages human emotions
+                    A multiple-choice trivia game that keeps track <br>
+                    of team scores on scoreboard. A collaboration project.
                     <br><br>
                     Built with: <br>
                     Ruby on Rails and SQLite <br>
