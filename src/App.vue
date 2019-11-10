@@ -13,5 +13,8 @@
   color: #2c3e50;
   margin: -8px;
   overflow-x: hidden;
+  h2 {
+        font-weight: 400;
+    }
 }
 </style>

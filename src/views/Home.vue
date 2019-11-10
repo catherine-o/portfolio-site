@@ -11,8 +11,9 @@
                     <img src='../assets/icons/resumelogo.svg' @click='openResume' alt='Resume'>
                 </div>
             </header>
-            <div class='element'>
+            <div class='sections'>
                 <About />
+                <Projects />
             </div>
         </div>
     </div>
@@ -20,9 +21,11 @@
 
 <script>
 import About from '@/components/About'
+import Projects from '@/components/Projects'
 export default {
     components: {
-        About
+        About,
+        Projects
     },
     methods: {
         openLinkedIn() {
@@ -79,7 +82,7 @@ export default {
                 opacity: 90%;;
             }
       }
-      .element {
+      .sections {
           background: none;
           padding: 260px 10%;
     }
