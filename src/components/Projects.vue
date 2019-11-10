@@ -14,7 +14,8 @@
                     Vanilla JavaScript, Ruby on Rails <br>
                     SQLite and WeatherWidget.io
                 </p>
-                <img class='icons' src='../assets/icons/githublogo.svg' alt='GitHub'>
+                <img class='icons' @click='openGreenHouseGitHub' src='../assets/icons/githublogo.svg' alt='GitHub'>
+                <img class='icons' @click='openGreenHouseVideo' src='../assets/icons/youtubelogo.svg' alt='GreenHouse on YouTube'>
             </div>
             
             <div class='project-profile'>
@@ -29,7 +30,9 @@
                     React.js, Ruby on Rails <br>
                     PostgreSQL and Google Maps API
                 </p>
-                <img class='icons' src='../assets/icons/githublogo.svg' alt='GitHub'>
+                <img class='icons' @click='openEnRouteGitHub' src='../assets/icons/githublogo.svg' alt='GitHub'>
+                <img class='globe-icon' @click='openEnRouteWebpage' src='../assets/icons/globeicon.png' alt='Demo'>
+                <img class='icons' @click='openEnRouteVideo' src='../assets/icons/youtubelogo.svg' alt='En Route on YouTube'>
             </div>
 
             <div class='project-profile'>
@@ -44,7 +47,8 @@
                     Vue.js, Node.js, Express.js <br>
                     PostgreSQL, Vuex
                 </p>
-                <img class='icons' src='../assets/icons/githublogo.svg' alt='GitHub'>
+                <img class='icons' @click='openSensiGitHub' src='../assets/icons/githublogo.svg' alt='GitHub'>
+                <img class='icons' @click='openSensiVideo' src='../assets/icons/youtubelogo.svg' alt='En Route on YouTube'>
             </div>
             
             <div class='project-profile trivia-app'>
@@ -59,7 +63,8 @@
                     Ruby on Rails and SQLite <br>
                     <br>
                 </p>
-                <img class='icons' src='../assets/icons/githublogo.svg' alt='GitHub'>
+                <img class='icons' @click='openTriviaGitHub' src='../assets/icons/githublogo.svg' alt='GitHub'>
+                <img class='icons' @click='openTriviaVideo' src='../assets/icons/youtubelogo.svg' alt='En Route on YouTube'>
             </div>
         </div>
         <img class='arrows' @click='scrollToTop' src='../assets/icons/uparrows.svg' alt='Page Up'>
@@ -71,6 +76,33 @@ export default {
     methods: {
         scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' })
+        },
+        openGreenHouseGitHub() {
+            window.open('https://github.com/catherine-o/GreenHouse', '_blank')
+        },
+        openGreenHouseVideo() {
+            window.open('https://www.youtube.com/watch?v=-JK8fxub4ek&feature=youtu.be', '_blank')
+        },
+        openEnRouteGitHub() {
+            window.open('https://github.com/catherine-o/national-parks-frontend', '_blank')
+        },
+        openEnRouteWebpage() {
+            window.open('https://national-parks-app.web.app/login', '_blank')
+        },
+        openEnRouteVideo() {
+            window.open('https://www.youtube.com/watch?v=WzjgFscnQqE', '_blank')
+        },
+        openSensiGitHub() {
+            window.open('https://github.com/catherine-o/sensi-frontend', '_blank')
+        },
+        openSensiVideo() {
+            window.open('https://www.youtube.com/watch?v=V5oDAX56trY', '_blank')
+        },
+        openTriviaGitHub() {
+            window.open('https://github.com/catherine-o/TriviaTime', '_blank')
+        },
+        openTriviaVideo() {
+            window.open('https://www.youtube.com/watch?v=Gq7AQbAOsg8', '_blank')
         }
     }
 }
@@ -102,7 +134,15 @@ export default {
         margin-left:10px;
     }
     .icons:hover {
-        opacity: 90%;;
+        opacity: 90%;
+    }
+    .globe-icon {
+        width: 25px;
+        opacity: 90%;
+        margin-left:10px;
+    }
+    .globe-icon:hover {
+        opacity: 100%;
     }
     .arrows {
         width: 25px;
