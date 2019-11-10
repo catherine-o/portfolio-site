@@ -2,8 +2,8 @@
     <div class='projects'>
         <h2>PROJECTS</h2>
         <div class='project-grid'>
-            <div id='greenhouse'>
-                <img src='https://tinyurl.com/yx98o6oe' alt='GreenHouse App'>
+            <div class='project-profile'>
+                <img id='app-img' src='../assets/greenhouse.png' alt='GreenHouse App'>
                 <p> 
                     <b>GreenHouse</b> 
                     <br>
@@ -17,7 +17,7 @@
                 <img class='icons' src='../assets/icons/githublogo.svg' alt='GitHub'>
             </div>
             
-            <div id='enroute'>
+            <div class='project-profile'>
                 <img id='app-img' src='../assets/enroute.png' alt='En Route App'>
                 <p> 
                     <b>En Route</b> 
@@ -32,7 +32,7 @@
                 <img class='icons' src='../assets/icons/githublogo.svg' alt='GitHub'>
             </div>
 
-            <div id='sensi'>
+            <div class='project-profile'>
                 <img id='app-img' src='../assets/sensi.png' alt='Sensi App'>
                 <p> 
                     <b>Sensi</b> 
@@ -47,9 +47,21 @@
                 <img class='icons' src='../assets/icons/githublogo.svg' alt='GitHub'>
             </div>
         </div>
-        <img class='arrows' src='../assets/icons/uparrows.svg' alt='Page Up'>
+        <img class='arrows' @click='scrollToTop' src='../assets/icons/uparrows.svg' alt='Page Up'>
     </div>
 </template>
+
+<script>
+export default {
+    methods: {
+        scrollToTop() {
+            // window.scrollTop(0)
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+            // window.animate({ scrollTop: 0 }, 'slow')
+        }
+    }
+}
+</script>
 
 <style lang="scss">
 .projects {
@@ -61,23 +73,25 @@
             justify-content: space-evenly;
         }
     }
+    .project-profile {
+        margin: 35px auto;
+    }
     #app-img {
         width: 500px;
     }
     .icons {
-                width: 25px;
-                opacity: 60%;
-                margin-left:10px;
-            }
-            .icons:hover {
-                opacity: 90%;;
-            }
+        width: 25px;
+        opacity: 60%;
+        margin-left:10px;
+    }
+    .icons:hover {
+        opacity: 90%;;
+    }
     .arrows {
         width: 25px;
         opacity: 60%;
-        // float: right;
         position: relative;
-        top: 60%;
+        top: 70%;
         left: 50%;
     }
     .arrows:hover {

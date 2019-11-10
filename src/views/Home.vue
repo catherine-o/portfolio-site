@@ -65,6 +65,7 @@ export default {
           padding: 14px;
           font-size: 21px;
           text-align: center;
+          z-index: 3;
           @media screen and (min-width: 900px) {
             display: flex;
             justify-content: space-around;

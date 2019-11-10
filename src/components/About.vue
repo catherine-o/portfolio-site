@@ -9,7 +9,7 @@
                 A contributing writer for The Startup.
             </p>
             <nav>
-                <span class='section' @click="scrollToProjects">PROJECTS</span>
+                <span class='section' @click="scrollToProjects()">PROJECTS</span>
                 <span> - </span>
                 <span class='section'>WRITINGS</span>
                 <span> - </span>
@@ -29,7 +29,13 @@ export default {
     methods: {
         scrollToProjects() {
             let projects = document.querySelector('.projects')
-            projects.scrollIntoView({ behavior: 'smooth' })
+            let projectsOffset = 200
+            let projectsPosition = projects.getBoundingClientRect().top
+            let offsetPosition = projectsPosition - projectsOffset
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            })
         }
     }
 }
@@ -37,7 +43,7 @@ export default {
 
 <style lang="scss">
 .about {
-    height: 80vh;
+    height: 75vh;
     .info {
         background-color: white;
         padding: 5% 12%;
