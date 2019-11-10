@@ -46,6 +46,21 @@
                 </p>
                 <img class='icons' src='../assets/icons/githublogo.svg' alt='GitHub'>
             </div>
+            
+            <div class='project-profile trivia-app'>
+                <img id='trivia-img' src='../assets/trivia.png' alt='Trivia App'>
+                <p> 
+                    <b>Trivia Time!</b> 
+                    <br>
+                    An interactive journal experience that <br>
+                    provides insight to and engages human emotions
+                    <br><br>
+                    Built with: <br>
+                    Ruby on Rails and SQLite <br>
+                    <br>
+                </p>
+                <img class='icons' src='../assets/icons/githublogo.svg' alt='GitHub'>
+            </div>
         </div>
         <img class='arrows' @click='scrollToTop' src='../assets/icons/uparrows.svg' alt='Page Up'>
     </div>
@@ -55,9 +70,7 @@
 export default {
     methods: {
         scrollToTop() {
-            // window.scrollTop(0)
             window.scrollTo({ top: 0, behavior: 'smooth' })
-            // window.animate({ scrollTop: 0 }, 'slow')
         }
     }
 }
@@ -78,6 +91,10 @@ export default {
     }
     #app-img {
         width: 500px;
+    }
+    #trivia-img {
+        width: 500px;
+        height: 312px;
     }
     .icons {
         width: 25px;

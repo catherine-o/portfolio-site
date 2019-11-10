@@ -29,7 +29,7 @@ export default {
     methods: {
         scrollToProjects() {
             let projects = document.querySelector('.projects')
-            let projectsOffset = 200
+            let projectsOffset = 190
             let projectsPosition = projects.getBoundingClientRect().top
             let offsetPosition = projectsPosition - projectsOffset
             window.scrollTo({
