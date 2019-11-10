@@ -4,11 +4,11 @@
             <header>
                 <h1 >CATHERINE O'HARA</h1>
                 <div class='icons'>
-                    <img src='../assets/icons/linkedinlogo.svg' alt='LinkedIn'>
-                    <img src='../assets/icons/githublogo.svg' alt='GitHub'>
-                    <img src='../assets/icons/mediumlogo.svg' alt='Medium'>
-                    <img src='../assets/icons/twitterlogo.svg' alt='Twitter'>
-                    <img src='../assets/icons/resumelogo.svg' alt='Resume'>
+                    <img src='../assets/icons/linkedinlogo.svg' @click='openLinkedIn' alt='LinkedIn'>
+                    <img src='../assets/icons/githublogo.svg' @click='openGitHub' alt='GitHub'>
+                    <img src='../assets/icons/mediumlogo.svg' @click='openMedium' alt='Medium'>
+                    <img src='../assets/icons/twitterlogo.svg' @click='openTwitter' alt='Twitter'>
+                    <img src='../assets/icons/resumelogo.svg' @click='openResume' alt='Resume'>
                 </div>
             </header>
             <div class='element'>
@@ -23,6 +23,23 @@ import About from '@/components/About'
 export default {
     components: {
         About
+    },
+    methods: {
+        openLinkedIn() {
+            window.open('https://www.linkedin.com/in/catherine-o/', '_blank')
+        },
+        openGitHub() {
+            window.open('https://github.com/catherine-o', '_blank')
+        },
+        openMedium() {
+            window.open('https://medium.com/@oharacatherine', '_blank')
+        },
+        openTwitter() {
+            window.open('https://twitter.com/catherine__oh', '_blank')
+        },
+        openResume() {
+            window.open('https://docs.google.com/presentation/d/13KNWovJC7EkSLTLU-HEQKly9R2E4Xvr9a0UGxvnCyC8/edit?usp=sharing', '_blank')
+        }
     }
 }
 </script>
@@ -64,7 +81,7 @@ export default {
       }
       .element {
           background: none;
-          padding: 230px 10%;
+          padding: 260px 10%;
     }
 }
 </style>
