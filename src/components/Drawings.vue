@@ -23,15 +23,33 @@ export default {
 <style lang="scss">
 .drawings {
     padding: 5%;
-    height: 73vh;
+    @media screen and (min-width: 1000px) {
+        height: 73vh;
+    }
+    @media screen and (min-height: 1000px) {
+        height: 85vh;
+    }
     .drawing-grid {
         display: flex;
+        flex-flow: row wrap;
         align-items: center;
         justify-content: space-evenly;
-        padding-top: 20px;
+        @media screen and (min-height: 1000px) {
+            margin: 6% 0;
+        }
         .drawing-img {
-            width: 300px;
             border: 25px solid black;
+            width: 70vw;
+            margin: 20px 0;
+            @media screen and (min-height: 1000px) {
+                width: 250px;
+            }
+            @media screen and (min-width: 1000px) {
+                width: 300px;
+            }
+            @media screen and (min-height: 1300px) {
+                width: 380px;
+            }
         }
     }
     .arrows {
@@ -39,7 +57,6 @@ export default {
         opacity: 60%;
         position: relative;
         left: 46%;
-        margin-top: 2%;
         @media screen and (min-width: 1000px) {
             left: 49%;
         }
