@@ -159,6 +159,9 @@ export default {
         position: relative;
         top: 60%;
         left: 45%;
+        @media screen and (min-height: 1000px) {
+            left: 43%;
+        }
     }
     .arrows:hover {
         opacity: 90%;;

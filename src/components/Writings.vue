@@ -122,9 +122,12 @@ export default {
         opacity: 80%;
         position: relative;
         left: 42%;
-        margin: -20px 0 20px 0;
+        margin: -5px 0 20px 0;
         @media screen and (min-width: 1000px) {
             left: 44%;
+        }
+        @media screen and (min-height: 1000px) {
+            left: 40%;
         }
     }
     .arrows:hover {

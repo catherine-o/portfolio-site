@@ -29,6 +29,9 @@ export default {
         @media screen and (min-width: 1000px) {
             left: 49%;
         }
+        @media screen and (min-height: 1000px) {
+            left: 45%;
+        }
     }
     .arrows:hover {
         opacity: 90%;;

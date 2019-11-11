@@ -23,10 +23,7 @@ export default {
             window.scrollTo({ top: 0, behavior: 'smooth' })
         },
         submitForm() {
-            this.validateInputs
-        },
-        validateInputs() {
-            
+            alert('Message sent!')
         }
     }
 }
@@ -42,8 +39,11 @@ export default {
     height: 80vh;
     padding-top: 5%;
     @media screen and (min-width: 1420px) {
-        // padding-top: 5%;
         height: 85vh;
+    }
+    @media screen and (min-height: 1000px) {
+        padding: 200px 0 0 0;
+        height: 88vh;
     }
     h2 {
         background-color: white;
@@ -52,8 +52,19 @@ export default {
         margin: auto;
     }
     .contact-form {
-        width: 50%;
-        margin: 5% auto;
+            margin: 5% auto;
+        @media screen and (min-width: 500px) {
+            width: 80%;
+        }
+        @media screen and (min-width: 700px) {
+            width: 70%;
+        }
+        @media screen and (min-width: 900px) {
+            width: 60%;
+        }
+        @media screen and (min-width: 1150px) {
+            width: 50%;
+        }
         .pageclip-form {
             display: flex;
             flex-flow: column nowrap;
@@ -62,7 +73,7 @@ export default {
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
                 height: 35px;
-                margin: 10px 0;
+                margin: 10px 15px;
                 border: none;
                 font-size: 15px;
                 padding: 5px 15px;
@@ -81,8 +92,7 @@ export default {
                 background-color: rgb(219, 163, 89);
                 color: white;
                 font-size: 15px;
-                margin-top: 10px;
-                margin-left: auto;
+                margin: 10px 15px 0 auto;
                 border: none;
             }
         }
@@ -94,9 +104,12 @@ export default {
         opacity: 80%;
         position: relative;
         left: 42%;
-        margin: -20px 0 20px 0;
+        margin: -5px 0 20px 0;
         @media screen and (min-width: 1000px) {
             left: 44%;
+        }
+        @media screen and (min-height: 1000px) {
+            left: 40%;
         }
     }
     .arrows:hover {

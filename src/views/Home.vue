@@ -58,26 +58,26 @@ export default {
 
 <style lang="scss">
 .home {
-      background-image: url('../assets/leaves.jpeg');
-      background-position: center;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 100vh;
-      header {
-          font-family: 'Montserrat', sans-serif;
-          letter-spacing: 2px;
-          background-color:rgb(231, 223, 216);
-          position: fixed;
-          padding: 14px;
-          text-align: center;
-          z-index: 3;
-          font-size: 20px;
-          @media screen and (min-width: 500px) {
+    background-image: url('../assets/leaves.jpeg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    header {
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 2px;
+        background-color:rgb(231, 223, 216);
+        position: fixed;
+        padding: 14px;
+        text-align: center;
+        z-index: 3;
+        font-size: 20px;
+        width: 100vw;
+        @media screen and (min-width: 500px) {
             padding: 14px;
-            width: 100vw;
-          }
-          @media screen and (min-width: 900px) {
+        }
+        @media screen and (min-width: 900px) {
             font-size: 21px;
             display: flex;
             justify-content: space-around;
@@ -85,19 +85,15 @@ export default {
             .icons {
                 margin: 40px 10px;
             }
-          }
-            img {
-                width: 25px;
-                opacity: 60%;
-                margin-left:10px;
-            }
-            img:hover {
-                opacity: 90%;;
-            }
-      }
-    //   .sections {
-    //       background: none;
-    //     //   padding: 260px 10%;
-    // }
+        }
+        img {
+            width: 25px;
+            opacity: 60%;
+            margin-left:10px;
+        }
+        img:hover {
+            opacity: 90%;;
+        }
+    }
 }
 </style>
