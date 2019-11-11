@@ -15,7 +15,7 @@
                 <span> - </span>
                 <span class='section' @click="scrollToDrawings">DRAWINGS</span>
                 <span> - </span>
-                <span class='section'>CONTACT</span>
+                <span class='section' @click="scrollToContact">CONTACT</span>
             </nav>
         </div>
     </div>
@@ -49,6 +49,16 @@ export default {
             let drawingsOffset = 105
             let drawingsPosition = drawings.getBoundingClientRect().top
             let offsetPosition = drawingsPosition - drawingsOffset
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            })
+        },
+        scrollToContact() {
+            let contact = document.querySelector('.contact')
+            let contactOffset = 130
+            let contactPosition = contact.getBoundingClientRect().top
+            let offsetPosition = contactPosition - contactOffset
             window.scrollTo({
                 top: offsetPosition,
                 behavior: 'smooth'
