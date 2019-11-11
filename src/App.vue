@@ -11,7 +11,11 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: -8px -8px 0 -8px;
+  margin: -8px -26px 0 -10px;
+  @media screen and (min-width: 900px) {
+    margin: -8px -8px 0 -8px;
+  }
+  // width: 100vw;
   h2 {
         font-weight: 400;
     }

@@ -50,8 +50,14 @@ export default {
 
 <style lang="scss">
 .about {
-    height: 75vh;
-    padding: 260px 10% 0 10%;
+    height: 65vh;
+    padding-top: 280px;
+    @media screen and (min-width: 700px) {
+        padding: 260px 10% 0 10%;
+    }
+    @media screen and (min-width: 700px) {
+        height: 75vh;
+    }
     .info {
         background-color: white;
         padding: 5% 12%;

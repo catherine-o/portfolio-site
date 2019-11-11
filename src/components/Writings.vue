@@ -62,26 +62,49 @@ export default {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 85vh;
+    width: 100%;
+    padding-top: 5%;
+    @media screen and (min-width: 1420px) {
+        padding-top: 2%;
+        height: 85vh;
+    }
     h2 {
         background-color: white;
         width: 200px;
+        padding: 15px 10px;
         margin: auto;
     }
     .post-grid {
-        width: 80%;
-        height: 425px;
-        background-color: white;
         margin: 5% auto;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-evenly;
+        background-color: white;
+        padding-bottom: 5%;
+        @media screen and (min-width: 700px) {
+            width: 70%;
+        }
+        @media screen and (min-width: 1430px) {
+            width: 80%;
+            height: 425px;
+            margin: 3% auto;
+            padding: 10px 20px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
         .post {
+            padding: 20px;
+            @media screen and (min-width: 700px) {
+            padding: 50px 100px 0 100px;
+            }
+            @media screen and (min-width: 1430px) {
             padding: 30px;
             margin: auto;
+            max-width: 320px;
+            }
             .post-img {
-                width: 320px;
+                width: 90%;
+                @media screen and (min-width: 700px) {
+                    width: 320px;
+                }
             }
             h4 {
                 opacity: 60%;

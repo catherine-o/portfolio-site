@@ -56,20 +56,23 @@ export default {
       background-position: center;
       background-attachment: fixed;
       background-repeat: no-repeat;
-      width: 100vw;
+      width: 100%;
       height: 100vh;
       header {
           font-family: 'Montserrat', sans-serif;
           letter-spacing: 2px;
           background-color:rgb(231, 223, 216);
           position: fixed;
-          width: 100%;
-          margin-top: 0;
           padding: 14px;
-          font-size: 21px;
           text-align: center;
           z-index: 3;
+          font-size: 20px;
+          @media screen and (min-width: 500px) {
+            padding: 14px;
+            width: 100vw;
+          }
           @media screen and (min-width: 900px) {
+            font-size: 21px;
             display: flex;
             justify-content: space-around;
             align-content: center;

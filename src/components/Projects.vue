@@ -111,6 +111,9 @@ export default {
 <style lang="scss">
 .projects {
     padding: 0 10% 30px;
+    @media screen and (min-height: 1000px) {
+        margin-top: 120px;
+    }
     @media screen and (min-width: 1000px) {
         .project-grid {
             display: flex;
@@ -122,11 +125,17 @@ export default {
         margin: 35px auto;
     }
     #app-img {
-        width: 500px;
+        width: 95%;
+        @media screen and (min-width: 1000px) {
+            width: 500px;
+        }
     }
     #trivia-img {
-        width: 500px;
-        height: 312px;
+        width: 95%;
+        @media screen and (min-width: 1000px) {
+            height: 312px;
+            width: 500px;
+        }
     }
     .icons {
         width: 25px;
