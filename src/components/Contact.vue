@@ -88,12 +88,14 @@ export default {
                 -moz-osx-font-smoothing: grayscale;
                 width: 180px;
                 height: 40px;
-                // background-color: rgb(109, 114, 163);
                 background-color: rgb(219, 163, 89);
                 color: white;
                 font-size: 15px;
                 margin: 10px 15px 0 auto;
                 border: none;
+            }
+            .pageclip-form__submit:hover {
+                background-color: rgb(224, 199, 165);
             }
         }
     }
