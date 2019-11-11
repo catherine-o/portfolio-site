@@ -110,7 +110,7 @@ export default {
 
 <style lang="scss">
 .projects {
-    padding: 0 10% 30px;
+    padding: 0 30px 30px 30px;
     @media screen and (min-height: 1000px) {
         margin-top: 120px;
     }
@@ -157,8 +157,8 @@ export default {
         width: 25px;
         opacity: 60%;
         position: relative;
-        top: 70%;
-        left: 50%;
+        top: 60%;
+        left: 45%;
     }
     .arrows:hover {
         opacity: 90%;;

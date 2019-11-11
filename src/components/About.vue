@@ -13,7 +13,7 @@
                 <span> - </span>
                 <span class='section' @click="scrollToWritings">WRITINGS</span>
                 <span> - </span>
-                <span class='section'>DRAWINGS</span>
+                <span class='section' @click="scrollToDrawings">DRAWINGS</span>
                 <span> - </span>
                 <span class='section'>CONTACT</span>
             </nav>
@@ -39,6 +39,16 @@ export default {
             let writingsOffset = 135
             let writingsPosition = writings.getBoundingClientRect().top
             let offsetPosition = writingsPosition - writingsOffset
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            })
+        },
+        scrollToDrawings() {
+            let drawings = document.querySelector('.drawings')
+            let drawingsOffset = 105
+            let drawingsPosition = drawings.getBoundingClientRect().top
+            let offsetPosition = drawingsPosition - drawingsOffset
             window.scrollTo({
                 top: offsetPosition,
                 behavior: 'smooth'

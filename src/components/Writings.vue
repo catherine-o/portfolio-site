@@ -65,7 +65,7 @@ export default {
     width: 100%;
     padding-top: 5%;
     @media screen and (min-width: 1420px) {
-        padding-top: 2%;
+        padding: 2% 0;
         height: 85vh;
     }
     h2 {
@@ -121,8 +121,11 @@ export default {
         width: 25px;
         opacity: 80%;
         position: relative;
-        left: 40%;
-        margin-top: -20px;
+        left: 42%;
+        margin: -20px 0 20px 0;
+        @media screen and (min-width: 1000px) {
+            left: 44%;
+        }
     }
     .arrows:hover {
         opacity: 90%;;

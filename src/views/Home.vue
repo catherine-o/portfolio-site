@@ -15,6 +15,7 @@
                 <About />
                 <Projects />
                 <Writings />
+                <Drawings />
             </div>
         </div>
     </div>
@@ -24,11 +25,13 @@
 import About from '@/components/About'
 import Projects from '@/components/Projects'
 import Writings from '@/components/Writings'
+import Drawings from '@/components/Drawings'
 export default {
     components: {
         About,
         Projects,
-        Writings
+        Writings,
+        Drawings
     },
     methods: {
         openLinkedIn() {
