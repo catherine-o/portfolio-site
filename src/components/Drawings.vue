@@ -23,7 +23,7 @@ export default {
 <style lang="scss">
 .drawings {
     padding: 5%;
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1400px) {
         height: 73vh;
     }
     @media screen and (min-height: 1000px) {
@@ -39,13 +39,13 @@ export default {
         }
         .drawing-img {
             border: 25px solid black;
-            width: 70vw;
+            width: 60vw;
             margin: 20px 0;
-            @media screen and (min-height: 1000px) {
-                width: 250px;
-            }
             @media screen and (min-width: 1000px) {
                 width: 300px;
+            }
+            @media screen and (min-height: 1000px) {
+                width: 250px;
             }
             @media screen and (min-height: 1300px) {
                 width: 380px;
