@@ -114,6 +114,7 @@ export default {
             }
             .section:hover {
                 color: tan;
+                cursor: pointer;
             }
         }
     }

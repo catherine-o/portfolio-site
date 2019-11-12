@@ -106,6 +106,7 @@ export default {
             }
             .pageclip-form__submit:hover {
                 background-color: rgb(224, 199, 165);
+                cursor: pointer;
             }
         }
     }
@@ -127,6 +128,7 @@ export default {
     }
     .arrows:hover {
         opacity: 0.9;
+        cursor: pointer;
     }
 }
 </style>

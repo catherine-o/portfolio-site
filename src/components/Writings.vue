@@ -114,6 +114,9 @@ export default {
                 font-size: 15px;
             }
         }
+        .post:hover {
+            cursor: pointer;
+        }
         .post:hover h3 {
             color: rgb(81, 141, 121);
         }
@@ -136,6 +139,7 @@ export default {
     }
     .arrows:hover {
         opacity: 0.9;
+        cursor: pointer;
     }
 }
 </style>

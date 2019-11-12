@@ -144,6 +144,7 @@ export default {
     }
     .icons:hover {
         opacity: 0.9;
+        cursor: pointer;
     }
     .globe-icon {
         width: 25px;
@@ -152,6 +153,7 @@ export default {
     }
     .globe-icon:hover {
         opacity: 1;
+        cursor: pointer;
     }
     .arrows {
         width: 25px;
@@ -165,6 +167,7 @@ export default {
     }
     .arrows:hover {
         opacity: 0.9;
+        cursor: pointer;
     }
 }
 </style>

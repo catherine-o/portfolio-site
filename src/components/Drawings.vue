@@ -66,6 +66,7 @@ export default {
     }
     .arrows:hover {
         opacity: 0.9;
+        cursor: pointer;
     }
 }
 </style>

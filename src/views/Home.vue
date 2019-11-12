@@ -102,6 +102,7 @@ export default {
         }
         img:hover {
             opacity: 0.9;
+            cursor: pointer;
         }
     }
 }
