@@ -81,6 +81,14 @@ export default {
         height: 75vh;
         padding: 260px 10% 0 10%;
     }
+    @media screen and (max-height: 420px) {
+        padding-top: 25%;
+       padding-bottom: 20%;
+    }
+    @media screen and (max-height: 370px) {
+        padding-top: 30%;
+       padding-bottom: 20%;
+    }
     .info {
         background-color: white;
         padding: 5% 12%;

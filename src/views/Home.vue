@@ -64,6 +64,9 @@ export default {
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+    @media screen and (max-height: 420px) {
+       height: 150vh;
+    }
     header {
         font-family: 'Montserrat', sans-serif;
         letter-spacing: 2px;
