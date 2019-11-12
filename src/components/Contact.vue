@@ -45,6 +45,10 @@ export default {
         padding: 200px 0 0 0;
         height: 88vh;
     }
+    @media screen and (max-height: 420px) {
+        padding: 200px 0 0 0;
+        height: 160vh;
+    }
     h2 {
         background-color: white;
         width: 200px;
