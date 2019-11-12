@@ -3,7 +3,7 @@
         <h2>PROJECTS</h2>
         <div class='project-grid'>
             <div class='project-profile'>
-                <img id='app-img' src='../assets/greenhouse.png' alt='GreenHouse App'>
+                <img id='app-img' src='../assets/projects/greenhouse.png' alt='GreenHouse App'>
                 <p> 
                     <b>GreenHouse</b> 
                     <br>
@@ -19,7 +19,7 @@
             </div>
             
             <div class='project-profile'>
-                <img id='app-img' src='../assets/enroute.png' alt='En Route App'>
+                <img id='app-img' src='../assets/projects/enroute.png' alt='En Route App'>
                 <p> 
                     <b>En Route</b> 
                     <br>
@@ -36,7 +36,7 @@
             </div>
 
             <div class='project-profile'>
-                <img id='app-img' src='../assets/sensi.png' alt='Sensi App'>
+                <img id='app-img' src='../assets/projects/sensi.png' alt='Sensi App'>
                 <p> 
                     <b>Sensi</b> 
                     <br>
@@ -52,7 +52,7 @@
             </div>
             
             <div class='project-profile trivia-app'>
-                <img id='trivia-img' src='../assets/trivia.png' alt='Trivia App'>
+                <img id='trivia-img' src='../assets/projects/trivia.png' alt='Trivia App'>
                 <p> 
                     <b>Trivia Time!</b> 
                     <br>

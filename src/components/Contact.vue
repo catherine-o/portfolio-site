@@ -1,7 +1,7 @@
 <template>
     <div class='contact'>
         <h2>CONTACT</h2>
-        <div class='contact-form' @submit.prevent='submitForm'>
+        <div class='contact-form' @submit='submitForm'>
             <form action="https://send.pageclip.co/UUAwZunWcLtVAisC9tlORP2sKTZ1m7VH" class="pageclip-form" method="post">
                 <!-- Make sure inputs have a "name" attribute! -->
                 <input type="text" name="name" placeholder="Your name" />
@@ -31,13 +31,19 @@ export default {
 
 <style lang="scss">
 .contact {
-    background-image: url('../assets/plant.jpeg');
+    background-image: url('../assets/backgrounds/plant-mobile.jpeg');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
     height: 85vh;
     padding-top: 5%;
+    @media screen and (max-width: 420px) {
+        background-image: linear-gradient(to bottom, rgb(219, 209, 200), rgb(255, 255, 255));
+    }
+    @media screen and (min-width: 820px) {
+        background-image: url('../assets/backgrounds/plant-desktop.jpeg');
+    }
     @media screen and (min-width: 1420px) {
         height: 85vh;
     }
@@ -105,6 +111,7 @@ export default {
     }
     .arrows {
         background-color: white;
+        border-radius: 5px;
         padding: 5px;
         width: 25px;
         opacity: 0.8;

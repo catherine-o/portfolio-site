@@ -58,12 +58,15 @@ export default {
 
 <style lang="scss">
 .writings {
-    background-image: url('../assets/flowers.jpeg');
+    background-image: url('../assets/backgrounds/flowers-mobile.jpeg');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
     padding-top: 5%;
+    @media screen and (min-width: 820px) {
+        background-image: url('../assets/backgrounds/flowers-desktop.jpeg');
+    }
     @media screen and (min-width: 1420px) {
         padding: 2% 0;
         height: 85vh;
@@ -117,6 +120,7 @@ export default {
     }
     .arrows {
         background-color: white;
+        border-radius: 5px;
         padding: 5px;
         width: 25px;
         opacity: 0.8;

@@ -58,12 +58,18 @@ export default {
 
 <style lang="scss">
 .home {
-    background-image: url('../assets/leaves.jpeg');
+    background-image: url('../assets/backgrounds/leaves-mobile.jpeg');
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
+    @media screen and (max-width: 420px) {
+        background-image: linear-gradient(to bottom, rgb(219, 209, 200), rgb(255, 255, 255));
+    }
+    @media screen and (min-width: 820px) {
+        background-image: url('../assets/backgrounds/leaves-desktop.jpeg');
+    }
     @media screen and (max-height: 420px) {
        height: 150vh;
     }
@@ -72,13 +78,13 @@ export default {
         letter-spacing: 2px;
         background-color:rgb(231, 223, 216);
         position: fixed;
-        padding: 14px;
+        padding: 14px 0;
         text-align: center;
         z-index: 3;
         font-size: 20px;
-        width: 100vw;
+        width: 105vw;
         @media screen and (min-width: 500px) {
-            padding: 14px;
+            padding: 14px 0;
         }
         @media screen and (min-width: 900px) {
             font-size: 21px;
