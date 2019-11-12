@@ -10,11 +10,11 @@
             </p>
             <nav>
                 <span class='section' @click="scrollToProjects">PROJECTS</span>
-                <span> - </span>
+                <span class='dash'> - </span>
                 <span class='section' @click="scrollToWritings">WRITINGS</span>
-                <span> - </span>
+                <span class='dash'> - </span>
                 <span class='section' @click="scrollToDrawings">DRAWINGS</span>
-                <span> - </span>
+                <span class='dash'> - </span>
                 <span class='section' @click="scrollToContact">CONTACT</span>
             </nav>
         </div>
@@ -70,24 +70,42 @@ export default {
 
 <style lang="scss">
 .about {
-    height: 65vh;
-    padding-top: 280px;
-    @media screen and (min-width: 700px) {
-        padding: 260px 10% 0 10%;
+    height: 70vh;
+    @media screen and (min-width: 320px) {
+        padding-top: 55%;
+    }
+    @media screen and (max-width: 570px) {
+        padding-top: 65%;
     }
     @media screen and (min-width: 700px) {
         height: 75vh;
+        padding: 260px 10% 0 10%;
     }
     .info {
         background-color: white;
         padding: 5% 12%;
+        margin: auto;
         nav {
             padding-top: 20px;
+            margin: auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
             span {
                 margin: 2%;
+                text-decoration: underline;
+                @media screen and (min-width: 750px) {
+                    text-decoration: none;
+                }
+            }
+            .dash {
+                display: none;
+                @media screen and (min-width: 750px) {
+                    display: inline-block;
+                }
             }
             .section:hover {
-                color: black;
+                color: tan;
             }
         }
     }
