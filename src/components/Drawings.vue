@@ -3,7 +3,7 @@
         <h2>DRAWINGS</h2>
         <div class='drawing-grid'>
             <img class='drawing-img' src='../assets/drawings/skulldrawing.jpg' alt='skull drawing'>
-            <img class='drawing-img' src='../assets/drawings/echeveria.jpg' alt='skull drawing'>
+            <img class='drawing-img' src='../assets/drawings/durerhand.jpg' alt='skull drawing'>
             <img class='drawing-img' src='../assets/drawings/sadmandrawing.jpg' alt='skull drawing'>
         </div>
         <img class='arrows' @click='scrollToTop' src='../assets/icons/uparrows.svg' alt='Page Up'>
