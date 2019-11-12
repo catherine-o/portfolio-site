@@ -36,7 +36,7 @@ export default {
     background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     padding-top: 5%;
     @media screen and (min-width: 1420px) {
         height: 85vh;
