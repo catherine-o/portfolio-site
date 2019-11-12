@@ -5,7 +5,7 @@
                 <h1 >CATHERINE O'HARA</h1>
                 <div class='icons'>
                     <img src='../assets/icons/linkedinlogo.svg' @click='openLinkedIn' alt='LinkedIn'>
-                    <img src='../assets/icons/githublogo.svg' @click='openGitHub' alt='GitHub'>
+                    <img src='../assets/icons/githublogo.png' @click='openGitHub' alt='GitHub'>
                     <img src='../assets/icons/mediumlogo.svg' @click='openMedium' alt='Medium'>
                     <img src='../assets/icons/twitterlogo.svg' @click='openTwitter' alt='Twitter'>
                     <img src='../assets/icons/resumelogo.svg' @click='openResume' alt='Resume'>
@@ -86,16 +86,16 @@ export default {
             justify-content: space-around;
             align-content: center;
             .icons {
-                margin: 40px 10px;
+                margin: 45px 40px 35px 40px;
             }
         }
         img {
             width: 25px;
-            opacity: 60%;
+            opacity: 0.6;
             margin-left:10px;
         }
         img:hover {
-            opacity: 90%;;
+            opacity: 0.9;
         }
     }
 }

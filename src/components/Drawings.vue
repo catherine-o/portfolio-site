@@ -54,7 +54,7 @@ export default {
     }
     .arrows {
         width: 25px;
-        opacity: 60%;
+        opacity: 0.6;
         position: relative;
         left: 46%;
         @media screen and (min-width: 1000px) {
@@ -65,7 +65,7 @@ export default {
         }
     }
     .arrows:hover {
-        opacity: 90%;;
+        opacity: 0.9;
     }
 }
 </style>

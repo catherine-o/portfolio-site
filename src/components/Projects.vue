@@ -14,7 +14,7 @@
                     Vanilla JavaScript, Ruby on Rails <br>
                     SQLite and WeatherWidget.io
                 </p>
-                <img class='icons' @click='openGreenHouseGitHub' src='../assets/icons/githublogo.svg' alt='GitHub'>
+                <img class='icons' @click='openGreenHouseGitHub' src='../assets/icons/githublogo.png' alt='GitHub'>
                 <img class='icons' @click='openGreenHouseVideo' src='../assets/icons/youtubelogo.svg' alt='GreenHouse on YouTube'>
             </div>
             
@@ -30,7 +30,7 @@
                     React.js, Ruby on Rails <br>
                     PostgreSQL and Google Maps API
                 </p>
-                <img class='icons' @click='openEnRouteGitHub' src='../assets/icons/githublogo.svg' alt='GitHub'>
+                <img class='icons' @click='openEnRouteGitHub' src='../assets/icons/githublogo.png' alt='GitHub'>
                 <img class='globe-icon' @click='openEnRouteWebpage' src='../assets/icons/globeicon.png' alt='Demo'>
                 <img class='icons' @click='openEnRouteVideo' src='../assets/icons/youtubelogo.svg' alt='En Route on YouTube'>
             </div>
@@ -47,7 +47,7 @@
                     Vue.js, Node.js, Express.js <br>
                     PostgreSQL, Vuex
                 </p>
-                <img class='icons' @click='openSensiGitHub' src='../assets/icons/githublogo.svg' alt='GitHub'>
+                <img class='icons' @click='openSensiGitHub' src='../assets/icons/githublogo.png' alt='GitHub'>
                 <img class='icons' @click='openSensiVideo' src='../assets/icons/youtubelogo.svg' alt='En Route on YouTube'>
             </div>
             
@@ -63,7 +63,7 @@
                     Ruby on Rails and SQLite <br>
                     <br>
                 </p>
-                <img class='icons' @click='openTriviaGitHub' src='../assets/icons/githublogo.svg' alt='GitHub'>
+                <img class='icons' @click='openTriviaGitHub' src='../assets/icons/githublogo.png' alt='GitHub'>
                 <img class='icons' @click='openTriviaVideo' src='../assets/icons/youtubelogo.svg' alt='En Route on YouTube'>
             </div>
         </div>
@@ -139,23 +139,23 @@ export default {
     }
     .icons {
         width: 25px;
-        opacity: 60%;
+        opacity: 0.6;
         margin-left:10px;
     }
     .icons:hover {
-        opacity: 90%;
+        opacity: 0.9;
     }
     .globe-icon {
         width: 25px;
-        opacity: 90%;
+        opacity: 0.8;
         margin-left:10px;
     }
     .globe-icon:hover {
-        opacity: 100%;
+        opacity: 1;
     }
     .arrows {
         width: 25px;
-        opacity: 60%;
+        opacity: 0.6;
         position: relative;
         top: 60%;
         left: 45%;
@@ -164,7 +164,7 @@ export default {
         }
     }
     .arrows:hover {
-        opacity: 90%;;
+        opacity: 0.9;
     }
 }
 </style>

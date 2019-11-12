@@ -107,7 +107,7 @@ export default {
                 }
             }
             h4 {
-                opacity: 60%;
+                opacity: 0.6;
                 font-size: 15px;
             }
         }
@@ -119,7 +119,7 @@ export default {
         background-color: white;
         padding: 5px;
         width: 25px;
-        opacity: 80%;
+        opacity: 0.8;
         position: relative;
         left: 42%;
         margin: -5px 0 20px 0;
@@ -131,7 +131,7 @@ export default {
         }
     }
     .arrows:hover {
-        opacity: 90%;;
+        opacity: 0.9;
     }
 }
 </style>
