@@ -60,12 +60,18 @@ export default {
 .writings {
     background-image: url('../assets/backgrounds/flowers-mobile.jpeg');
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     width: 100%;
     padding-top: 5%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -5;
     @media screen and (min-width: 820px) {
         background-image: url('../assets/backgrounds/flowers-desktop.jpeg');
+        background-attachment: fixed;
     }
     @media screen and (min-width: 1420px) {
         padding: 2% 0;

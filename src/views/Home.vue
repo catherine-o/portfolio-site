@@ -58,17 +58,20 @@ export default {
 
 <style lang="scss">
 .home {
-    background-image: url('../assets/backgrounds/leaves-mobile.jpeg');
+    background-image: url('../assets/backgrounds/leaves-mobile-sm.jpeg');
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    @media screen and (max-width: 420px) {
-        background-image: linear-gradient(to bottom, rgb(219, 209, 200), rgb(255, 255, 255));
-    }
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -5;
     @media screen and (min-width: 820px) {
         background-image: url('../assets/backgrounds/leaves-desktop.jpeg');
+        background-attachment: fixed;
     }
     @media screen and (max-height: 420px) {
        height: 150vh;
