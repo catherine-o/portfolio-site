@@ -73,7 +73,7 @@ export default {
         text-align: center;
         z-index: 3;
         font-size: 20px;
-        width: 105vw;
+        width: 102%;
         @media screen and (min-width: 500px) {
             padding: 14px 0;
         }

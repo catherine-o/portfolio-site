@@ -58,6 +58,9 @@ export default {
         padding: 200px 0 0 0;
         height: 160vh;
     }
+    @media screen and (max-width: 320px) {
+        height: 93vh;
+    }
     h2 {
         background-color: white;
         width: 200px;
@@ -65,7 +68,8 @@ export default {
         margin: auto;
     }
     .contact-form {
-            margin: 5% auto;
+        margin: 5% auto;
+        padding: 15px 10px 25px 10px;
         @media screen and (min-width: 500px) {
             width: 80%;
         }
@@ -87,7 +91,8 @@ export default {
                 -moz-osx-font-smoothing: grayscale;
                 height: 35px;
                 margin: 10px 15px;
-                border: none;
+                // border: none;
+                border: 1px solid rgba(101, 134, 116, 0.5);
                 font-size: 15px;
                 padding: 5px 15px;
             }
