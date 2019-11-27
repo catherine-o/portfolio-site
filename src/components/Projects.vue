@@ -3,7 +3,7 @@
         <h2>PROJECTS</h2>
         <div class='project-grid'>
             <div class='project-profile'>
-                <a href='https://github.com/catherine-o/GreenHouse' target='blank'>
+                <a href='https://github.com/catherine-o/GreenHouse' target='_blank'>
                     <img id='app-img' src='../assets/projects/greenhouse.png' alt='GreenHouse App'>
                 </a>
                 <p> 
@@ -21,7 +21,7 @@
             </div>
             
             <div class='project-profile'>
-                <a href='https://github.com/catherine-o/national-parks-frontend' target='blank'>
+                <a href='https://github.com/catherine-o/national-parks-frontend' target='_blank'>
                     <img id='app-img' src='../assets/projects/enroute.png' alt='En Route App'>
                 </a>
                 <p> 
@@ -40,7 +40,7 @@
             </div>
 
             <div class='project-profile'>
-                <a href='https://github.com/catherine-o/sensi-frontend' target='blank'>
+                <a href='https://github.com/catherine-o/sensi-frontend' target='_blank'>
                     <img id='app-img' src='../assets/projects/sensi.png' alt='Sensi App'>
                 </a>
                 <p> 
@@ -58,7 +58,7 @@
             </div>
             
             <div class='project-profile trivia-app'>
-                <a href='https://github.com/catherine-o/TriviaTime' target='blank'>
+                <a href='https://github.com/catherine-o/TriviaTime' target='_blank'>
                     <img id='trivia-img' src='../assets/projects/trivia.png' alt='Trivia App'>
                 </a>
                 <p> 
