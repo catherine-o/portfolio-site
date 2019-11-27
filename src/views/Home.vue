@@ -7,13 +7,13 @@
                     <a href='https://www.linkedin.com/in/catherine-o/' target='_blank'>
                         <img src='../assets/icons/linkedinlogo.svg' alt='LinkedIn'></a>
                     <a href='https://github.com/catherine-o' target='_blank'>
-                        <img src='../assets/icons/githublogo.png' @click='openGitHub' alt='GitHub'></a>
+                        <img src='../assets/icons/githublogo.png' alt='GitHub'></a>
                     <a href='https://medium.com/@oharacatherine' target='_blank'>
-                        <img src='../assets/icons/mediumlogo.svg' @click='openMedium' alt='Medium'></a>
+                        <img src='../assets/icons/mediumlogo.svg' alt='Medium'></a>
                     <a href='https://twitter.com/catherine__oh' target='_blank'>
-                        <img src='../assets/icons/twitterlogo.svg' @click='openTwitter' alt='Twitter'></a>
+                        <img src='../assets/icons/twitterlogo.svg' alt='Twitter'></a>
                     <a href='https://docs.google.com/presentation/d/13KNWovJC7EkSLTLU-HEQKly9R2E4Xvr9a0UGxvnCyC8/edit?usp=sharing' target='_blank'>
-                        <img src='../assets/icons/resumelogo.svg' @click='openResume' alt='Resume'></a>
+                        <img src='../assets/icons/resumelogo.svg' alt='Resume'></a>
                 </div>
             </header>
             <div class='sections'>
