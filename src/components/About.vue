@@ -70,7 +70,7 @@ export default {
 
 <style lang="scss">
 .about {
-    height: 70vh;
+    height: 71vh;
     @media screen and (min-width: 320px) {
         padding-top: 55%;
     }
