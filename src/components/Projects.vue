@@ -3,7 +3,9 @@
         <h2>PROJECTS</h2>
         <div class='project-grid'>
             <div class='project-profile'>
-                <img id='app-img' src='../assets/projects/greenhouse.png' alt='GreenHouse App'>
+                <a href='https://github.com/catherine-o/GreenHouse' target='blank'>
+                    <img id='app-img' src='../assets/projects/greenhouse.png' alt='GreenHouse App'>
+                </a>
                 <p> 
                     <b>GreenHouse</b> 
                     <br>
@@ -19,7 +21,9 @@
             </div>
             
             <div class='project-profile'>
-                <img id='app-img' src='../assets/projects/enroute.png' alt='En Route App'>
+                <a href='https://github.com/catherine-o/national-parks-frontend' target='blank'>
+                    <img id='app-img' src='../assets/projects/enroute.png' alt='En Route App'>
+                </a>
                 <p> 
                     <b>En Route</b> 
                     <br>
@@ -36,7 +40,9 @@
             </div>
 
             <div class='project-profile'>
-                <img id='app-img' src='../assets/projects/sensi.png' alt='Sensi App'>
+                <a href='https://github.com/catherine-o/sensi-frontend' target='blank'>
+                    <img id='app-img' src='../assets/projects/sensi.png' alt='Sensi App'>
+                </a>
                 <p> 
                     <b>Sensi</b> 
                     <br>
@@ -52,7 +58,9 @@
             </div>
             
             <div class='project-profile trivia-app'>
-                <img id='trivia-img' src='../assets/projects/trivia.png' alt='Trivia App'>
+                <a href='https://github.com/catherine-o/TriviaTime' target='blank'>
+                    <img id='trivia-img' src='../assets/projects/trivia.png' alt='Trivia App'>
+                </a>
                 <p> 
                     <b>Trivia Time!</b> 
                     <br>
@@ -129,6 +137,9 @@ export default {
         @media screen and (min-width: 1000px) {
             width: 500px;
         }
+    }
+    #app-img:hover {
+        cursor: pointer;
     }
     #trivia-img {
         width: 95%;
